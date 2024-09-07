@@ -1,0 +1,94 @@
+:root {
+    --background-color: #1d1f26;
+    --primary-color: #fff;
+    --secondary-background-color: #2a2e35;
+    --button-bg-color: #ffffff;
+    --button-hover-color: #fcfcfc;
+    --input-border-color: #555;
+    --placeholder-color: #aaa;
+    --font-family: 'Arial', sans-serif;
+    --box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    --border-radius: 5px;
+    --container-gap: 8rem;
+    --column-width: 250px;
+    --column-height: 350px;
+    --heading-color: #f5f5f5;
+    --heading-font-size: 35px;
+    --input-padding: 10px;
+    --button-font-size: 16px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    background-image: url('https://img.freepik.com/free-photo/plain-smooth-green-paper-background_53876-102688.jpg?size=626&ext=jpg&ga=GA1.2.513444618.1725468923&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-color);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: var(--container-gap);
+}
+
+.column {
+    background-color: var(--secondary-background-color);
+    padding: 70px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: var(--column-width);
+    height: var(--column-height);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: var(--heading-font-size);
+    color: var(--heading-color);
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 50%;
+    padding: var(--input-padding);
+    margin: 10px;
+    background-color: var(--background-color);
+    border: 2px solid var(--input-border-color);
+    border-radius: var(--border-radius);
+    color: var(--primary-color);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--button-bg-color);
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--primary-color);
+    font-size: var(--button-font-size);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--button-hover-color);
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="text"]::placeholder {
+    color: var(--placeholder-color);
+    font-size: var(--button-font-size);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
